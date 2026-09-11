@@ -19,7 +19,6 @@ CSRF_TRUSTED_ORIGINS = [
 
 # Application definition
 INSTALLED_APPS = [
-    # Jazzmin админканын кооз темасы (милдеттуу турдо django.contrib.admin'ге чейин турушу керек)
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',

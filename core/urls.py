@@ -3,5 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('app.urls')), # app ичиндеги urls.py файлга жол көрсөтөбүз
+    path('', include('app.urls')), # 'app' дегендин ордуна өзүңүздүн приложениенин атын жазасыз
 ]

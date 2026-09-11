@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Task
 
-def index(request):
-    return HttpResponse("Привет мир Render")
+def home_view(request):
+    # Получаем все задачи из базы данных
+    tasks = Task.objects.all()
+    # Передаем задачи в HTML-шаблон
+    return render(request, 'index.html', {'tasks': tasks})
