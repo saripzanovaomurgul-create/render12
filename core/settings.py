@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'django_filters',
     
     # Сиздин приложение (мисалы, api)
-    'api',
+    'app',
 ]
 
 MIDDLEWARE = [
